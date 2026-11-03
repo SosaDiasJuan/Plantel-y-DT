@@ -23,4 +23,8 @@ Convertir lo que pasa en la cancha en decisiones fuera de ella.
 
 ## Estado
 
-Proyecto en etapa inicial de análisis, diseño y definición de arquitectura.
+La base de acceso está en construcción y el modelo de datos ya contempla operación de club, planificación, calendario, convocatorias, lesiones, sanciones, métricas y rendimiento por posición. Consultá [el modelo operativo](docs/modelo-operativo.md) para el alcance y orden de aplicación de la base.
+
+## Configuración local
+
+El backend toma la conexión desde `DB_URL`, `DB_USERNAME` y `DB_PASSWORD`. Para no romper el inicio local ya configurado, usa `root` / `root` sólo como fallback de desarrollo; en cualquier entorno compartido o productivo definí las tres variables con un usuario de aplicación. Aplicá los scripts de `database/` en orden.

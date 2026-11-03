@@ -43,22 +43,9 @@ function BrandPanel() {
         </div>
 
         <div className="statistics">
-
-          <div>
-            <strong>1.200+</strong>
-            <span>EQUIPOS REGISTRADOS</span>
-          </div>
-
-          <div>
-            <strong>48.000+</strong>
-            <span>JUGADORES ACTIVOS</span>
-          </div>
-
-          <div>
-            <strong>320+</strong>
-            <span>TORNEOS EN CURSO</span>
-          </div>
-
+          <div><strong>PLANIFICÁ</strong><span>ENTRENAMIENTOS</span></div>
+          <div><strong>ANALIZÁ</strong><span>PARTIDOS</span></div>
+          <div><strong>MEJORÁ</strong><span>EL EQUIPO</span></div>
         </div>
 
       </div>

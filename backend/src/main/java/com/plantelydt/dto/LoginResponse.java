@@ -3,15 +3,15 @@ package com.plantelydt.dto;
 public class LoginResponse {
 
     private String message;
-    private String token;
+    private String email;
     private String role;
 
     public LoginResponse() {
     }
 
-    public LoginResponse(String message, String token, String role) {
+    public LoginResponse(String message, String email, String role) {
         this.message = message;
-        this.token = token;
+        this.email = email;
         this.role = role;
     }
 
@@ -23,12 +23,12 @@ public class LoginResponse {
         this.message = message;
     }
 
-    public String getToken() {
-        return token;
+    public String getEmail() {
+        return email;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getRole() {

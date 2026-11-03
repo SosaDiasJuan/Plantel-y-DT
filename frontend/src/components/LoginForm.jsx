@@ -9,7 +9,7 @@ import {
 
 import { login } from "../services/authService";
 
-function LoginForm({ role, onBack }) {
+function LoginForm({ role, onBack, onAuthenticated }) {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,7 +20,7 @@ function LoginForm({ role, onBack }) {
   const [error, setError] = useState("");
 
   const roleName =
-    role === "DIRECTOR"
+    role === "DIRECTOR_TECNICO"
       ? "Director Técnico"
       : "Jugador";
 
@@ -46,11 +46,7 @@ function LoginForm({ role, onBack }) {
         rememberMe
       });
 
-      console.log("LOGIN EXITOSO", response);
-
-      alert(
-        `Bienvenido ${response.email}. Rol: ${response.role}`
-      );
+      onAuthenticated(response);
 
     } catch (err) {
 

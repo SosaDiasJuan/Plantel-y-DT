@@ -28,7 +28,7 @@ function RoleSelector({ onSelect }) {
 
         <button
           className="role-card"
-          onClick={() => onSelect("DIRECTOR")}
+          onClick={() => onSelect("DIRECTOR_TECNICO")}
         >
 
           <div className="role-icon director">
